@@ -2,7 +2,7 @@ chrome.runtime.onMessage.addListener(function (message) {
   
   let messageAction = message.action
   
-  const newTabList = [];
+  const tabsList = [];
   
   switch (messageAction) {
     case 'open home page':
@@ -18,16 +18,13 @@ chrome.runtime.onMessage.addListener(function (message) {
   function maintainFreq (message) {
     
     let url = message.videoLink;
-    let duration = message.videoDuration;
     let vTabsVal = message.vTabs;
-    let frequencyVal = message.frequency;
-  
-    for(let i=0 ; i < frequencyVal ;i++) {
-      createASet(vTabsVal,duration,url);
-    }
+   
+    createASet(vTabsVal,url);
+    reloadTabs();
   }
   
-  function createASet (vTabsVal,duration,url) {
+  function createASet (vTabsVal,url) {
   
     for(let i=0 ; i < vTabsVal ;i++) {
       createATab(url);
@@ -37,14 +34,47 @@ chrome.runtime.onMessage.addListener(function (message) {
   function createATab (url) {
     chrome.tabs.create({
       url: url
-    }, function (tabs) {
-      console.log(tabs);
-      newTabList.push(tabs.id);
+    }, function (tab) {
+      tabsList.push(tab.id);
     });
   }
   
-  //for reloading stuff
+  function reloadTabs () {
+    
+    let frequencyVal = message.frequency;
+    let duration = message.videoDuration;
+    let vTabsVal = message.vTabs;
   
+    duration = duration*1000;
+    
+    function settime () {
   
+      function timering() {
+    
+        for (let i=0; i < vTabsVal; i++) {
+          console.log('reloaded');
+          chrome.tabs.reload(tabsList[i]);
+        }
+    
+        console.log(frequencyVal);
+        frequencyVal--;
+        console.log(frequencyVal);
+        
+        checkCount();
+      }
   
+      function checkCount () {
+        if (!frequencyVal) {
+          clearInterval(forTimer);
+          tabsList.forEach (function (tabId) {
+            chrome.tabs.remove (tabId);
+          })
+        }
+      }
+      
+      let forTimer = setInterval(timering, duration);
+    }
+    
+    settime();
+  }
 })

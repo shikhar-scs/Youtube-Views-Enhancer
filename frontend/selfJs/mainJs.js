@@ -6,14 +6,9 @@ window.onload = function () {
     
     const videoLinkVal = $("#videoLink").val() || "";
     const videoDurationVal =  $("#videoDuration").val() || 60;
-    const vTabsVal = $("#vTabs").val() || 1;
-    const frequencyVal = $("#frequency").val() || 2;
-  
-/*    console.log(videoLinkVal);
-    console.log(videoDurationVal);
-    console.log(vTabsVal);
-    console.log(frequencyVal);
-    */
+    const vTabsVal = $("#vTabs").val() || 2;
+    const frequencyVal = $("#frequency").val() || 20;
+    
     chrome.runtime.sendMessage({
       action: "letsBegin",
       videoLink: videoLinkVal,

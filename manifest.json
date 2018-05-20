@@ -1,7 +1,7 @@
 {
   "name": "viewEnhancer",
   "version": "1.0",
-  "description": "Increase youtube views ",
+  "description": "Increase YouTube Views ",
   "background": {
     "scripts": ["backendJs/routes.js"],
     "persistent": true
@@ -9,6 +9,12 @@
   "manifest_version": 2,
 
   "browser_action": {
+    "default_icon": "./icons/128YT.png",
     "default_popup": "./popupDirectory/popup.html"
-  }
+  },
+
+  "icons": {
+    "16": "./icons/16YT.png",
+    "48": "./icons/48YT.png",
+    "128": "./icons/128YT.png" }
 }

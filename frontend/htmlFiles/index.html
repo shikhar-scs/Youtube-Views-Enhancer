@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="../selfCss/bootstrap/css/bootstrap.css">
+</head>
+<body>
+<body class="bg-light">
+
+<div class="container">
+  <div class="py-5 text-center">
+    <h2>Enter Video Details</h2>
+  </div>
+  
+  <div class="row">
+    <!--right side ka samaan-->
+    <!--samaan on the left side -->
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" novalidate>
+        
+        <div class="mb-3">
+          <label for="videoLink">Youtube Video Link/URL</label>
+            <input type="text" class="form-control" id="videoLink" placeholder="https://youtu.be/OpkD9-7idMQ" required>
+          <div class="invalid-feedback">
+            Please enter a valid URL.
+          </div>
+        </div>
+        <div class="row">
+    
+          <div class="col-md-4 mb-3">
+            <label for="videoDuration">Video Duration</label>
+            <input type="text" class="form-control" id="videoDuration" placeholder="Convert into seconds pls" value="" required>
+            <div class="invalid-feedback">
+              A valid duration is required
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="vTabs">No. of tabs</label>
+            <input type="text" class="form-control" id="vTabs" placeholder="Less than 10 pls" value="" required>
+            <div class="invalid-feedback">
+              A valid no. is required
+            </div>
+          </div>
+    
+          <div class="col-md-4 mb-3">
+            <label for="frequency">Frequency</label>
+            <input type="text" class="form-control" id="frequency" placeholder="10" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+  
+        </div>
+        
+        <button class="btn btn-primary btn-lg btn-block mt-5" type="submit" id="beginButton">Begin</button>
+      </form>
+    </div>
+  </div>
+  
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2017-2018 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>
+</div>
+</body>
+<script src="../selfJs/mainJs.js"></script>
+<script src="../selfJs/jquery-3.2.1.js"></script>
+</html>

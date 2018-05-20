@@ -1,7 +1,7 @@
 
+<div align:center></div>
 
-
-# Youtube Views Enhancer <img src="https://user-images.githubusercontent.com/25258877/40280047-5f4c8dce-5c6b-11e8-874a-9e7a9d0ffa74.png" height="80" width="100" style="margin-left:auto;margin-right:auto">
+# Youtube Views Enhancer <img src="https://user-images.githubusercontent.com/25258877/40280446-01684512-5c71-11e8-8af3-3ec2ab90404b.png" height="40" width="50" style="margin-left:auto;margin-right:auto">
 
 Chrome Extension to increase YouTube views. Easy to setup and FREE to use !
 
@@ -24,7 +24,14 @@ Chrome Extension to increase YouTube views. Easy to setup and FREE to use !
    The setup is complete :slightly_simle:
  ```
 ## Demo   
-  
+### The Basics 
+
+  ![basic](https://user-images.githubusercontent.com/25258877/40280404-56d71fce-5c70-11e8-9153-4a255f09f025.gif)
+
+### Automatic reload :)
+
+  ![reloads](https://user-images.githubusercontent.com/25258877/40280410-718a20be-5c70-11e8-92a1-39d7bb33f570.gif)
+
 ## Contribute
 Big or small, contribute it all. Each and every contribution/feature/suggestion is priceless . So, let'em come.
 

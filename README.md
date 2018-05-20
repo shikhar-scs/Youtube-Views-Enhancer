@@ -1,4 +1,8 @@
-# Youtube Views Enhancer
+
+
+
+# Youtube Views Enhancer <img src="https://user-images.githubusercontent.com/25258877/40280047-5f4c8dce-5c6b-11e8-874a-9e7a9d0ffa74.png" height="80" width="100" style="margin-left:auto;margin-right:auto">
+
 Chrome Extension to increase YouTube views. Easy to setup and FREE to use !
 
 ## Features
@@ -21,6 +25,13 @@ Chrome Extension to increase YouTube views. Easy to setup and FREE to use !
  ```
 ## Demo   
   
-  
+## Contribute
+Big or small, contribute it all. Each and every contribution/feature/suggestion is priceless . So, let'em come.
+
+Contribution guidelines are the same as the general standard maintained over github.
+
+ - Issues would be appreciaed with relevant screenshots.
+ - PR's would be appreciated if filed from a seperate branch and includes a working gif demo or relevant screenshots. 
+
 ## License 
 [Apache 2.0 License](https://github.com/shikhar-scs/Youtube-Views-Enhancer/blob/master/LICENSE)

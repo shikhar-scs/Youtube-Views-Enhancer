@@ -14,14 +14,14 @@ Chrome Extension to increase YouTube views. Easy to setup and FREE to use !
   
 ## SetUp
 ```
-   Download the ZIP Folder from above (green button)
-   Extract Contents
-   Open the Chrome Browser and bring up the extensions management page: chrome://extensions.
-   If Developer mode has a + by it, click the +. The + changes to a -, and more buttons and information appear.
-   Click the Load unpacked extension button. A file dialog appears.
-   In the file dialog, choose the unzipped directory : Youtube-Views-Enhancer-master. 
-   A small icon appears on the right side of the address bar, where all extensions exist.
-   The setup is complete :slightly_simle:
+   • Download the ZIP Folder from above (green button)
+   • Extract Contents
+   • Open the Chrome Browser and bring up the extensions management page: chrome://extensions.
+   • If Developer mode has a + by it, click the +. The + changes to a -, and more buttons and information appear.
+   • Click the Load unpacked extension button. A file dialog appears.
+   • In the file dialog, choose the unzipped directory : Youtube-Views-Enhancer-master. 
+   • A small icon appears on the right side of the address bar, where all extensions exist.
+   • The setup is complete :slightly_simle:
  ```
 ## Demo   
 ### The Basics 
